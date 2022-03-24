@@ -77,7 +77,7 @@ function App() {
           setReminder={setReminder}
         />
        : <div className='no-task-notification'>
-          <p>"No task to show"</p>
+          <p className='no-task-notification'>"No task to show"</p>
         </div>
       }
       <footer>© John Liao 2022</footer>
