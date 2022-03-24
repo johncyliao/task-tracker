@@ -80,6 +80,7 @@ function App() {
           <p>"No task to show"</p>
         </div>
       }
+      <footer>© John Liao 2022</footer>
     </div>
   );
 }

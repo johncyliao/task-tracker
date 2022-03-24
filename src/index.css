@@ -124,3 +124,8 @@ header {
 .delete-icon:hover {
   font-size: 28px;
 }
+
+footer {
+  text-align: center;
+  color: rgb(242, 242, 242);
+}
