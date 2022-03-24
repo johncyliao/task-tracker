@@ -1,13 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Lato:wght@300&family=Poppins:wght@200;300;400;500;700;800;900&family=Raleway:wght@500&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  flex-direction: column; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  border: solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  min-height: 350px;
+  max-width: 600px;
+  margin: 20px auto;
+  /* align-items: center; */
+}
+
+@media (max-width: 600px) {
+  .app {
+    border: none;
+    margin: 0;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-toggleShowAddTask {
+  width: 65px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn-show-green {
+  background-color: green;
+}
+
+.btn-show-red {
+  background-color: rgb(201, 11, 19);
+}
+
+.info-list {
+  margin-top: 10px;
+}
+
+.add-task {
+  margin: auto;
+}
+
+.form-add-task {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(242, 242, 242); */
+  border: solid rgb(242, 242, 242);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 5px;
+}
+
+.new-content,
+.new-time,
+.new-reminder-container {
+  margin-bottom: 12px;
+}
+
+.new-reminder-text {
+  margin-left: 5px;
+}
+.radio-label {
+  margin-left: 5px;
+}
+
+.no-task-notification {
+  margin: 10px 15px;
+}
+
+.task {
+  background-color: rgb(242, 242, 242);
+  border: solid rgb(242, 242, 242);
+  border-radius: 10px;
+  margin: 10px 5px;
+  padding: 5px 12px;
+}
+
+.task-reminder {
+  border-left: 5px solid green;
+}
+
+.task-header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+}
+
+.task-header-type-icon {
+  font-size: 26px;
+  margin-top: 0;
+}
+
+.task-header-content {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 10px;
+  max-width: 85%;
+  overflow-wrap: break-word;
+}
+
+.task-header-space {
+  flex-grow: 1;
+}
+
+.delete-icon {
+  color: rgb(28, 31, 35);
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.delete-icon:hover {
+  font-size: 28px;
 }
